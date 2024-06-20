@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosa E-commerce</title>
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/articles-navigation-buttons.css" />
+    <link rel="stylesheet" href="css/articles.css" />
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <link rel="stylesheet" href="css/social-media.css" />
+
+    <!--Font Family called 'Bebas Neue' implemented in this website -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <section class="home-link">
+        <a href="#home">
+          <img class="shopping-cart-icon" src="icons/shopping-cart-icon.svg" />
+          SHOP<span class="name-owner">ROSA</span>
+        </a>
+      </section>
+
+      <nav class="navigation">
+        <div class="tab tab-hover">
+          <div class="section-name">New Arrivals</div>
+
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-hover">
+          <div class="section-name">Plants</div>
+
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-hover">
+          <div class="section-name">Flowers</div>
+
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-hover">
+          <div class="section-name">Pots</div>
+
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-hover">
+          <div class="section-name">Offer Zone</div>
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-hover">
+          <div class="section-name">Product</div>
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+        </div>
+
+        <div class="tab tab-short-dropdown" id="tab-pages">
+          <div class="section-name">Pages</div>
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+          <div class="short-dropdown-pages hidden">
+            <div class="dropdown-pages">
+              <div class="text-content">Shop</div>
+
+              <div class="text-content">Cart</div>
+
+              <div class="text-content">Products</div>
+
+              <div class="text-content">Contact</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab tab-short-dropdown" id="tab-blog">
+          <div class="section-name">Blog</div>
+
+          <img
+            class="direction-down-icon"
+            src="icons/direction-down-icon.svg"
+          />
+
+          <div class="short-dropdown-blog hidden">
+            <div class="dropdown-blog">
+              <div class="text-content">Shop</div>
+
+              <div class="text-content">Cart</div>
+
+              <div class="text-content">Products</div>
+
+              <div class="text-content">Contact</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="cart-current-count">
+        <img class="search-icon" src="icons/search-icon.svg" />
+
+        <div class="shopping-basket">
+          <img
+            class="shopping-basket-icon"
+            src="icons/shopping-basket-icon.svg"
+          />
+
+          <div class="quantity-items">10</div>
+        </div>
+
+        <div class="amount">$512</div>
+
+        <img class="hamburguer-menu" src="icons/hamburguer-menu.svg" />
+      </section>
+
+      <div class="dropdown-menu hidden shrink">
+        <div class="dropdown-content">
+          <div class="first-row">
+            <span class="outdoor-plants">
+              <div class="plant-category">Outdoor Plants</div>
+
+              <div>Snake Plant</div>
+              <div>Jade Plant</div>
+              <div>Tulsi Plant</div>
+              <div>Ficus Plant</div>
+              <div>Peace Lily</div>
+              <div>Money Plant</div>
+              <div>Boston Fern</div>
+              <div>Rubber Plant</div>
+            </span>
+
+            <span class="indoor plants">
+              <div class="plant-category">Indoor Plants</div>
+
+              <div>Snake Plant</div>
+              <div>Jade Plant</div>
+              <div>Tulsi Plant</div>
+              <div>Ficus Plant</div>
+              <div>Peace Lily</div>
+              <div>Money Plant</div>
+              <div>Boston Fern</div>
+              <div>Rubber Plant</div>
+            </span>
+
+            <span class="ornamental trees">
+              <div class="plant-category">Ornamental Trees</div>
+              <div>Snake Plant</div>
+              <div>Jade Plant</div>
+              <div>Tulsi Plant</div>
+              <div>Ficus Plant</div>
+              <div>Peace Lily</div>
+              <div>Money Plant</div>
+              <div>Boston Fern</div>
+              <div>Rubber Plant</div>
+            </span>
+
+            <span class="flower-plants">
+              <div class="plant-category">Flower Plants</div>
+              <div>Snake Plant</div>
+              <div>Jade Plant</div>
+              <div>Tulsi Plant</div>
+              <div>Ficus Plant</div>
+              <div>Peace Lily</div>
+              <div>Money Plant</div>
+              <div>Boston Fern</div>
+              <div>Rubber Plant</div>
+            </span>
+
+            <span class="bonsai-trees">
+              <div class="plant-category">Bonsai Trees</div>
+              <div>Snake Plant</div>
+              <div>Jade Plant</div>
+              <div>Tulsi Plant</div>
+              <div>Ficus Plant</div>
+              <div>Peace Lily</div>
+              <div>Money Plant</div>
+              <div>Boston Fern</div>
+              <div>Rubber Plant</div>
+            </span>
+          </div>
+
+          <div class="second-row">
+            <div class="free-shipping">
+              <img class="truck-icon" src="icons/truck-icon.svg" />
+              <p class="name">FREE SHIPPING & RETURN</p>
+              <p class="description">Free shipping on all orders over $120</p>
+            </div>
+            <div class="online-support">
+              <img class="headphones-icon" src="icons/headphones-icon.svg" />
+              <p class="name">ONLINE SUPPORT 24/7</p>
+              <p class="description">Contact our support department 24/7</p>
+            </div>
+            <div class="money-back">
+              <img class="agreement-icon" src="icons/agreement-icon.svg" />
+              <p class="name">MONEY BACK GUARANTEE</p>
+              <p class="description">100% money back guarantee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="slide">
+        <img class="first-slide" src="background-images/slider1.jpg" alt="" />
+      </div>
+
+      <div class="slide">
+        <img class="second-slide" src="background-images/slider2.jpg" alt="" />
+      </div>
+
+      <div class="slide">
+        <img class="third-slide" src="background-images/slider3.jpg" alt="" />
+      </div>
+
+      <div class="presentation">
+        <div class="presentation-title-container animation-title">
+          <h2 class="presentation-title">
+            PLANTS FOR HEALTH <br />
+            <span>UPTO 75% OFF</span>
+          </h2>
+        </div>
+
+        <p class="presentation-description animation-description">
+          The best plants on the world made in Dominican Republic by the best
+          gardener ever Rosa Javier
+        </p>
+
+        <div class="flex-button">
+          <div class="shop-button-container animation-button">
+            <button class="shop-button shop-button-hover">
+              Shop Now
+              <img
+                class="shopping-bag-icon"
+                src="icons/shopping-bag-icon.svg"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="navigation-slide">
+        <div class="first-navigation navigation-number" tabindex="0">01</div>
+        <div class="space"></div>
+
+        <div class="second-navigation navigation-number" tabindex="0">02</div>
+        <div class="space"></div>
+
+        <div class="third-navigation navigation-number" tabindex="0">03</div>
+      </nav>
+    </section>
+
+    <section id="articles">
+      <h1 class="title-section-items">NEW ARRIVALS</h1>
+      <p class="description-items">New Top Trendy Plants & Flowers</p>
+
+      <nav id="articles-navigation">
+        <button class="button-navigation button-focus-effect">All</button>
+
+        <button class="button-navigation">Outdoor Plants</button>
+
+        <button class="button-navigation">Indoor Plants</button>
+
+        <button class="button-navigation">Ornamental Trees</button>
+
+        <button class="button-navigation">Flower Plants</button>
+      </nav>
+
+      <div class="grid-products">
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+            <!---->
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+
+          <div class="action-product favorite-container">
+            <img class="favorite-icon" src="icons/heart-icon.svg" />
+          </div>
+
+          <div class="action-product cart-container">
+            <img class="cart-icon" src="icons/cart-icon.svg" />
+          </div>
+
+          <div class="action-product search-container">
+            <img class="search-white-icon" src="icons/search-icon-white.svg" />
+          </div>
+        </div>
+        <div class="product">
+          <div class="thumbnail-row">
+            <img class="thumbnail" src="images/plant.png" />
+            <div class="available-colors">Available Colors</div>
+            <div class="set-colors">
+              <div class="c1"></div>
+
+              <div class="c2"></div>
+
+              <div class="c3"></div>
+
+              <div class="c4"></div>
+
+              <div class="c5"></div>
+            </div>
+
+            <div class="action-product favorite-container">
+              <img class="favorite-icon" src="icons/heart-icon.svg" />
+            </div>
+
+            <div class="action-product cart-container">
+              <img class="cart-icon" src="icons/cart-icon.svg" />
+            </div>
+
+            <div class="action-product search-container">
+              <img
+                class="search-white-icon"
+                src="icons/search-icon-white.svg"
+              />
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-name">Adansonia</div>
+            <div class="product-price">$1,120</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comunication">
+      <div class="flexbox">
+        <img class="message-icon" src="icons/mail-icon.svg" />
+
+        <h1 class="header-message">SUBSCRIBE NEWSLETTER</h1>
+
+        <p class="message-comunication">
+          Join our private community ShopMartio. We'll send you <br />
+          curated stories from the road once a month.
+        </p>
+
+        <div class="inputs">
+          <input
+            placeholder="Enter Your Email Here..."
+            class="mail-input"
+            type="text"
+          />
+
+          <div class="subscribe-button-container">
+            <button class="subscribe-button">Subscribe Now</button>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <div class="social-media-container">
+            <div class="social-media-background">
+              <img
+                class="facebook-icon social-media-icon"
+                src="icons/facebook-icon.svg"
+              />
+            </div>
+          </div>
+
+          <div class="social-media-container">
+            <div class="social-media-background">
+              <img
+                class="twitter-icon social-media-icon"
+                src="icons/twitter-icon.svg"
+              />
+            </div>
+          </div>
+
+          <div class="social-media-container">
+            <div class="social-media-background">
+              <img
+                class="google-icon social-media-icon"
+                src="icons/google-plus-icon.svg"
+              />
+            </div>
+          </div>
+
+          <div class="social-media-container">
+            <div class="social-media-background">
+              <img
+                class="whatsapp-icon social-media-icon"
+                src="icons/whatsapp-icon.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    margin-left: 300px;
+  }
+  20% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-left: 28px;
+    opacity: 1;
+  }
+}
+
+@keyframes Zoom {
+  0% {
+    color: white;
+    background-color: rgb(78, 202, 102);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  50% {
+    color: white;
+    background-color: rgb(78, 202, 102);
+    top: 40%;
+    bottom: 40%;
+    left: 40%;
+    right: 40%;
+  }
+
+  60% {
+    color: #4eca66;
+    background-color: transparent;
+  }
+
+  100% {
+    color: #4eca66;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes ZoomInverso {
+  0% {
+    color: #4eca66;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  50% {
+    color: #4eca66;
+    background-color: transparent;
+    top: 40%;
+    bottom: 40%;
+    left: 40%;
+    right: 40%;
+  }
+
+  60% {
+    color: white;
+    background-color: rgb(78, 202, 102);
+  }
+
+  100% {
+    color: white;
+    background-color: rgb(78, 202, 102);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@keyframes RightToLeft {
+  0% {
+    opacity: 0;
+    margin-left: -400px;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    margin-left: 28px;
+    opacity: 1;
+  }
+}

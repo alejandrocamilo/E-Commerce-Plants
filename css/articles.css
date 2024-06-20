@@ -1,0 +1,135 @@
+.grid-products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 30px;
+  padding: 30px 80px 80px 80px;
+}
+
+.product {
+  position: relative;
+}
+
+.thumbnail-row {
+  background-color: rgb(243, 248, 238);
+  padding: 50px 20px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.thumbnail {
+  margin-bottom: 50px;
+}
+
+.product-info {
+  background-color: transparent;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product-name {
+  color: #4d5b77;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.product-name:hover {
+  color: #4eca66;
+}
+
+.product-price {
+  color: #4eca66;
+  font-size: 20px;
+}
+
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  width: 13px;
+  height: 13px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.available-colors {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(105, 105, 105);
+}
+
+.c1 {
+  background-color: #ffc26b;
+}
+
+.c2 {
+  background-color: black;
+}
+
+.c3 {
+  background-color: gray;
+}
+
+.c4 {
+  background-color: purple;
+}
+
+.c5 {
+  background-color: rgb(255, 128, 149);
+}
+
+.set-colors {
+  height: 20px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.action-product {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  right: 0;
+  opacity: 0;
+  transition: right 0.3s, opacity 0.3s;
+  transition-delay: background-color 0;
+  cursor: pointer;
+}
+
+.action-product:hover {
+  background-color: #4eca66;
+}
+
+.product:hover .action-product {
+  right: 20px;
+  opacity: 1;
+}
+
+.favorite-container {
+  top: 20px;
+}
+
+.cart-container {
+  top: 65px;
+}
+
+.search-container {
+  top: 110px;
+}

@@ -1,0 +1,147 @@
+/*RESPONSIVEDESIGN MIDDLE SECTION HEADER*/
+
+@media (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
+
+  .cart-current-count {
+    flex: 1;
+  }
+
+  .hamburguer-menu {
+    display: block;
+  }
+
+  .amount {
+    margin-right: 10px;
+  }
+}
+
+/*RESPONSIVEDESIGN HEADER*/
+
+@media (max-width: 600px) {
+  header {
+    height: 68px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0 15px 0;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .home-link,
+  .cart-current-count {
+    width: fit-content;
+    padding: 0;
+  }
+
+  .cart-current-count {
+    justify-content: space-between;
+    width: 150px;
+  }
+
+  .search-icon,
+  .shopping-basket-icon {
+    margin: 0;
+  }
+
+  .quantity-items {
+    right: -8px;
+  }
+}
+
+@keyframes UnShrink {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+}
+
+@keyframes Shrink {
+  0% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  100% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+}
+
+/*RESPONSIVEDESIGN HOME*/
+
+@media (max-width: 1000px) {
+  .slide {
+    display: none;
+  }
+  #home {
+    background-color: rgb(227, 236, 217);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 295px;
+    padding: 50px 0px 40px 0px;
+  }
+
+  .presentation {
+    position: static;
+    text-align: center;
+  }
+
+  .presentation-title-container {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .presentation-title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 15px;
+  }
+
+  .presentation-description {
+    margin-bottom: 28px;
+  }
+
+  .flex-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navigation-slide {
+    position: static;
+    padding-left: 26px;
+  }
+}
+
+/*RESPONSIVEDESIGN GRID*/
+@media (max-width: 600px) {
+  .grid-products {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .grid-products {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  .grid-products {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

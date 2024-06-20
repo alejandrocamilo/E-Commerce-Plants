@@ -1,0 +1,45 @@
+/* ITEMS */
+
+#articles {
+  background-color: white;
+  padding-top: 70px;
+}
+
+.title-section-items {
+  color: rgb(47, 57, 66);
+  font-size: 30px;
+  font-weight: 900;
+  transform: scaleX(0.6);
+  margin-bottom: 5px;
+}
+.description-items {
+  color: rgb(125, 143, 179);
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+.title-section-items,
+.description-items,
+#articles-navigation {
+  text-align: center;
+}
+
+.button-navigation {
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid rgba(175, 175, 175, 0.4);
+  color: rgb(104, 104, 104);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.7s, color 0.7s;
+}
+
+.button-navigation:hover {
+  background-color: #4eca66;
+  color: white;
+}
+
+.button-navigation:focus {
+  background-color: #4eca66;
+  color: white;
+}

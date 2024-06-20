@@ -1,0 +1,17 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Roboto;
+  position: relative;
+  height: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+}

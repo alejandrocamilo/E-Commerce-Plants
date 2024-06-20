@@ -1,0 +1,159 @@
+/*STYLES HOME******************/
+
+#home {
+  height: 660px;
+  position: relative;
+  background-color: rgb(227, 236, 217);
+}
+
+.slide {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: -20px;
+  background-position: 60% 0;
+  transition: transform 1.4s;
+}
+
+.first-slide {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.second-slide {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.third-slide {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/*BUTTONS FROM 1 TO 3 TO SWIPE THE SLIDE*/
+
+.navigation-slide {
+  position: absolute;
+  left: 45%;
+  bottom: 6%;
+  z-index: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(148, 236, 148);
+}
+
+.navigation-number {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.space {
+  height: 2px;
+  width: 40px;
+  background-color: #4eca66;
+  margin: 0 8px;
+}
+
+/*PRESENTATION HOME*/
+
+.presentation {
+  position: absolute;
+  width: 500px;
+  top: 26%;
+  z-index: 50;
+}
+
+.presentation-title-container {
+  margin-left: 28px;
+  margin-bottom: 10px;
+}
+
+.presentation-title {
+  color: rgb(47, 57, 66);
+  font-size: 70px;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive;
+  line-height: 78px;
+  transition: opacity 0.6s;
+}
+
+.presentation-title span {
+  color: #4eca66;
+}
+
+.animation-title {
+  animation: leftToRight 1.7s ease-out 0s 1 normal;
+}
+
+.presentation-description {
+  width: 472px;
+  margin-left: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+  margin-bottom: 25px;
+  transition: opacity 0.6s;
+}
+
+.animation-description {
+  animation: RightToLeft 1.7s ease-out 0s 1 normal;
+}
+
+.shop-button-container {
+  margin-left: 28px;
+  width: 170px;
+  height: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.shop-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 14px;
+  background-color: rgb(78, 202, 102);
+  border: none;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #4eca66;
+  transition: background-color 0.2s, color 0.2s, opacity 0.6s;
+  white-space: nowrap;
+}
+
+.shop-button-container:hover .shop-button-hover {
+  background-color: transparent;
+  color: #4eca66;
+  animation: Zoom 0.25s linear 0s 1 normal;
+}
+
+.shop-button-mouseout {
+  background-color: #4eca66;
+  color: white;
+  animation: ZoomInverso 0.25s linear 0s 1 normal;
+}
+
+.shopping-bag-icon {
+  margin-left: 25px;
+  pointer-events: none;
+}
+
+.shop-button:hover .shopping-bag-icon {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(53%) saturate(554%)
+    hue-rotate(76deg) brightness(92%) contrast(79%);
+}
+
+.animation-button {
+  animation: RightToLeft 1.9s ease-out 0s 1 normal;
+}

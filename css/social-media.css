@@ -1,0 +1,136 @@
+.comunication {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: rgb(227, 236, 217);
+}
+
+.flexbox {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  flex: 1;
+}
+
+.message-icon {
+  margin-bottom: 20px;
+}
+
+.header-message {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Bebas Neue", cursive;
+  color: #2f3942;
+}
+
+.message-comunication {
+  margin-bottom: 30px;
+  text-align: center;
+  color: rgb(125, 143, 179);
+}
+
+.inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  width: 49%;
+}
+
+.mail-input {
+  flex: 1;
+  width: 100%;
+  color: #7d8fb3;
+  padding: 20px 25px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.mail-input::placeholder {
+  color: rgb(206, 206, 206);
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.subscribe-button-container {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 140px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.subscribe-button-container:hover .subscribe-button {
+  top: 20px;
+  right: 30px;
+  left: 30px;
+  bottom: 20px;
+  background-color: transparent;
+}
+
+.subscribe-button {
+  transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s,
+    background-color 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #4eca66;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Roboto, sons-serif;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 235px;
+  height: 60px;
+}
+
+.social-media-container {
+  width: 60px;
+  height: 60px;
+}
+
+.social-media-background {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.social-media-icon {
+  width: 20px;
+  transition: transform 0.5s;
+  transition-timing-function: linear;
+}
+
+.social-media-background:hover .social-media-icon {
+  transform: rotate(360deg);
+  filter: brightness(0) saturate(100%) invert(70%) sepia(53%) saturate(554%)
+    hue-rotate(76deg) brightness(92%) contrast(79%);
+}
+
+.social-media-background:hover {
+  border: 1px solid #4eca66;
+}
