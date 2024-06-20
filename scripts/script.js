@@ -175,3 +175,13 @@ for (let i = 0; i < productsOverview.length; i++) {
     searchesIcon[i].style.transitionDelay = "0.3s";
   });
 }
+
+
+const shoppingBasket = document.querySelector(".shopping-basket-icon");
+const quantityItems = document.querySelector(".quantity-items");
+
+let i = quantityItems.textContent;
+
+shoppingBasket.addEventListener("click", function () {
+  quantityItems.textContent = i++;
+});
